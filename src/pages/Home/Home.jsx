@@ -1,10 +1,12 @@
+import HeroSection from "../../Components/HeroSection/HeroSection";
+import Navbar from "../../Components/Navbar/Navbar";
+
 const HomePage = () => {
   return (
-    <div>
-      <h1 className="text-4xl font-semibold underline text-center">
-        Hello World
-      </h1>
-    </div>
+    <>
+      <Navbar />
+      <HeroSection />
+    </>
   );
 };
 
