@@ -12,16 +12,16 @@ const TopBar = () => {
     <div className="bg-primary h-[60px] flex items-center">
       <div className="container flex md:flex-row flex-col items-center justify-center md:justify-between ">
         <div className="space-x-5 flex items-center text-[#878787] ">
-          <span className="w-5 h-5 p-1 hover:text-white">
+          <span className="w-5 h-5 p-1 hover:text-white cursor-pointer">
             <FaTwitter className="w-4 h-4" />
           </span>
-          <span className="w-5 h-5 p-1 hover:text-white">
+          <span className="w-5 h-5 p-1 hover:text-white cursor-pointer">
             <FaLinkedinIn className="w-4 h-4" />
           </span>
-          <span className="w-5 h-5 p-1 hover:text-white">
+          <span className="w-5 h-5 p-1 hover:text-white cursor-pointer">
             <FaGoogle className="w-4 h-4" />
           </span>
-          <span className="w-5 h-5 p-1 hover:text-white">
+          <span className="w-5 h-5 p-1 hover:text-white cursor-pointer">
             <FaPinterestP className="w-4 h-4" />
           </span>
         </div>

@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
       <TopBar />
       <nav
-        className={` w-full  lg:px-10 lg:py-4  transition-all duration-300 font-Inter flex justify-center`}
+        className={` w-full  lg:py-4  transition-all duration-300 font-Inter flex justify-center`}
       >
         <div className="container">
           <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -27,7 +27,7 @@ const Navbar = () => {
                 <img src="/Logo.png" alt="website_logo" />
               </Link>
             </div>
-            <div className="px-3 w-full lg:hidden flex justify-between text-white bg-[#5f4ff8] p-3">
+            <div className="px-3 w-full lg:hidden flex justify-between text-white bg-secondary p-3">
               <h2 className="text-2xl uppercase font-bold">creative people</h2>
               <button
                 className="lg:hidden block focus:outline-none "
@@ -53,7 +53,7 @@ const Navbar = () => {
                     ? "pending"
                     : isActive
                     ? "active"
-                    : ""} hover:text-secondary border-b-2 lg:border-b-0 hover:lg:border px-3 w-full block`}
+                    : ""} hover:text-secondary border-b-2 lg:border-b-0  px-3 w-full block`}
                 to="/"
               >
                 Home
@@ -64,7 +64,7 @@ const Navbar = () => {
                     ? "pending"
                     : isActive
                     ? "active"
-                    : ""} hover:text-secondary border-b-2 lg:border-b-0 hover:lg:border px-3 w-full block transition-all duration-300`}
+                    : ""} hover:text-secondary border-b-2 lg:border-b-0  px-3 w-full block transition-all duration-300`}
                 to="/about"
               >
                 About
@@ -75,32 +75,22 @@ const Navbar = () => {
                     ? "pending"
                     : isActive
                     ? "active"
-                    : ""} hover:text-secondary border-b-2 lg:border-b-0 hover:lg:border px-3 w-full block transition-all duration-300`}
+                    : ""} hover:text-secondary border-b-2 lg:border-b-0  px-3 w-full block transition-all duration-300`}
                 to="/services"
               >
                 Services
               </NavLink>
+
               <NavLink
                 className={`${({ isActive, isPending }) =>
                   isPending
                     ? "pending"
                     : isActive
                     ? "active"
-                    : ""} hover:text-secondary border-b-2 lg:border-b-0 hover:lg:border px-3 w-full block transition-all duration-300`}
-                to="/portfolio"
-              >
-                Portfolio
-              </NavLink>
-              <NavLink
-                className={`${({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "active"
-                    : ""} hover:text-secondary border-b-2 lg:border-b-0 hover:lg:border px-3 w-full block transition-all duration-300`}
+                    : ""} hover:text-secondary border-b-2 lg:border-b-0  px-3 w-full block transition-all duration-300`}
                 to="/page"
               >
-                Page
+                Pricing
               </NavLink>
               <NavLink
                 className={`${({ isActive, isPending }) =>
@@ -108,7 +98,7 @@ const Navbar = () => {
                     ? "pending"
                     : isActive
                     ? "active"
-                    : ""} hover:text-secondary border-b-2 lg:border-b-0 hover:lg:border px-3 w-full block transition-all duration-300`}
+                    : ""} hover:text-secondary border-b-2 lg:border-b-0  px-3 w-full block transition-all duration-300`}
                 to="/blog"
               >
                 Blog
@@ -119,7 +109,7 @@ const Navbar = () => {
                     ? "pending"
                     : isActive
                     ? "active"
-                    : ""} hover:text-secondary border-b-2 lg:border-b-0 hover:lg:border px-3 w-full block transition-all duration-300`}
+                    : ""} hover:text-secondary border-b-2 lg:border-b-0  px-3 w-full block transition-all duration-300`}
                 to="/contact"
               >
                 Contact
@@ -128,9 +118,11 @@ const Navbar = () => {
 
             {/* large device visible button */}
 
-            <button className="btn-main flex items-center justify-center space-x-3">
-              Free Consultation <GoArrowUpRight />{" "}
-            </button>
+            <div className="hidden lg:block">
+              <button className="btn-top flex items-center justify-center space-x-3">
+                Free Consultation <GoArrowUpRight />
+              </button>
+            </div>
           </div>
         </div>
       </nav>

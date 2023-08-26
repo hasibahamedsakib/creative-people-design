@@ -12,6 +12,13 @@
   @apply text-secondary;
 }
 
-/* .btn-main {
-  @apply w-[120px] lg:w-[221px] lg:h-[54px] border-2;
-} */
+.btn-top {
+  @apply w-[120px] lg:w-[221px] lg:h-[54px] border-2 text-[18px] font-medium hover:text-secondary hover:border-secondary transition-all duration-300;
+}
+.btn-primary {
+  @apply w-[213px] h-[55px] 2xl:h-[66px] bg-skyBlue text-white border-2 text-[18px] font-medium hover:text-skyBlue hover:border-skyBlue hover:bg-transparent transition-all duration-300;
+}
+
+.description {
+  @apply text-sm text-gray leading-10 font-Inter text-left;
+}
